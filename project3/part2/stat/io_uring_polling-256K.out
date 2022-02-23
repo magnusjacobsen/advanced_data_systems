@@ -1,0 +1,20 @@
+# started on Wed Feb 23 07:18:31 2022
+
+
+ Performance counter stats for 'fio --name=randread --ioengine=io_uring --iodepth=1 --rw=randread --bs=256K --direct=1 --size=1GB --runtime=60 --lat_percentiles=1 --sqthread_poll=1':
+
+          5,996.32 msec task-clock                #    1.802 CPUs utilized          
+               375      context-switches          #   62.538 /sec                   
+                22      cpu-migrations            #    3.669 /sec                   
+           104,565      page-faults               #   17.438 K/sec                  
+    18,308,218,675      cycles                    #    3.053 GHz                    
+    41,625,278,311      instructions              #    2.27  insn per cycle         
+    12,622,950,266      branches                  #    2.105 G/sec                  
+         1,168,743      branch-misses             #    0.01% of all branches        
+
+       3.326898331 seconds time elapsed
+
+       2.963593000 seconds user
+       3.034945000 seconds sys
+
+
